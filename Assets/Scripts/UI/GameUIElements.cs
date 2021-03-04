@@ -22,6 +22,8 @@ namespace UI
             playerCrossText = GameObject.Find("PlayerCrossText");
             playerCircleText = GameObject.Find("PlayerCircleText");
             gameField = GameObject.Find("GameField");
+
+            Reset();
             
             Events.OnGameStart += Event_OnGameStart;
             Events.OnSelectFigure += Event_OnSelectFigure;
