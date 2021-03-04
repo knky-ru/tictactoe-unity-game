@@ -112,7 +112,7 @@ public class TicTacToe : CryoBehaviour
 
     IEnumerator WaitForRobotMove()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         int placeholderIndex = playerCurrentTurn.RobotMove(difficulty, field);
         Events.OnRobotClickPlaceholder_Event(placeholderIndex);
         isWaitForMove = false;
