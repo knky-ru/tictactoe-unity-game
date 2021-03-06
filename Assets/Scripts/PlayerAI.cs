@@ -74,7 +74,7 @@ public class PlayerAI : Player
         maxWeights = maxWeights.OrderBy(x => random.Next())
             .ToDictionary(x => x.Key, x => x.Value);
         
-        if (maxWeights.Count == 0) return random.Next(1, 9);
+        if (maxWeights.Count == 0) return random.Next(1, 10);
         
         int maxIndex = maxWeights.First().Key;
         return maxIndex;
@@ -100,7 +100,7 @@ public class PlayerAI : Player
         maxWeights = maxWeights.OrderBy(x => random.Next())
             .ToDictionary(x => x.Key, x => x.Value);
 
-        if (maxWeights.Count == 0) return random.Next(1, 9);
+        if (maxWeights.Count == 0) return random.Next(1, 10);
 
         int maxIndex = maxWeights.First().Key;
         return maxIndex;
